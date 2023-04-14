@@ -1,0 +1,11 @@
+Abdurrahman selam. Ödev için teşekkür ederim. Ellerine sağlık.
+
+Fluent Validation kullanmışsın güzel olmuş (bence gerekli değildi ama hoşuma gitti)
+Service ve Repository arasında isimden kaynaklı bir yanlış anlama olduğunu düşünüyorum. 
+
+IServiceRepository aslında bir repository. Ancak Service (örneğin ClassService) ile birlikte kullanılmış ve SRP'yi ihlal etmiş. Bu ClassService, class varlığı ile ilgilenirken;
+validasyon ya da loglama gibi yan görevleri de icra ederken; veriyi repository'ye paslaması daha doğru olurdu.
+
+Bunun dışında sorun göremedim. Eline sağlık tekrar.
+
+Bir de gerçek dünyada Concrete - Abstract arasında izolasyona çok nadir ihtiyaç duyuyoruz artık. Sadece bir yoğurt yiyiş olarak belirtmek istedim
